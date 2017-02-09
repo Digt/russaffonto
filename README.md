@@ -1,2 +1,2 @@
-# russaffonto
+# RussAffOnto
 Russian Affixes Ontology
