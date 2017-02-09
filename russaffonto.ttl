@@ -1,0 +1,870 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix : <http://kloud.one/russaffonto#> .
+@base <http://kloud.one/russaffonto> .
+
+# Author: Constantin Kondratyev
+# Created: 2016-12-01 19:18
+# Description: Russian Affix Ontology
+
+<http://kloud.one/russaffonto> a owl:Ontology ;
+                                owl:versionIRI <http://kloud.one/russaffonto/1.0.0> ;
+                                dc:date "01-12-2016" ;
+                                rdfs:label "RusAffOnto"@en ;
+                                rdfs:title "Онтология Аффиксов Русского Языка"@ru ,
+                                            "Russian Affixes Ontology"@en .
+                                            
+
+# Individuals
+
+<#1> lexinfo:case lexinfo:nominativeCase;
+                                 lexinfo:gender lexinfo:masculine;
+                                 lexinfo:number lexinfo:singular;
+                                 lexinfo:partOfSpeech lexinfo:noun;
+                                 a owl:NamedIndividual,
+                                              lexinfo:Suffix;
+                                 rdfs:label "а"@ru.
+<#10> lexinfo:case lexinfo:nominativeCase;
+                                  lexinfo:gender lexinfo:masculine;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "я"@ru.
+<#100> lexinfo:case lexinfo:instrumentalCase;
+                                   lexinfo:gender lexinfo:neuter;
+                                   lexinfo:number lexinfo:plural;
+                                   lexinfo:partOfSpeech lexinfo:noun;
+                                   a owl:NamedIndividual,
+                                                lexinfo:Suffix;
+                                   rdfs:label "ами"@ru.
+<#101> lexinfo:case lexinfo:instrumentalCase;
+                                   lexinfo:gender "Pluralia tantum";
+                                   lexinfo:number lexinfo:plural;
+                                   lexinfo:partOfSpeech lexinfo:noun;
+                                   a owl:NamedIndividual,
+                                                lexinfo:Suffix;
+                                   rdfs:label "ами"@ru.
+<#102> lexinfo:case lexinfo:instrumentalCase;
+                                   lexinfo:gender lexinfo:masculine;
+                                   lexinfo:number lexinfo:plural;
+                                   lexinfo:partOfSpeech lexinfo:noun;
+                                   a owl:NamedIndividual,
+                                                lexinfo:Suffix;
+                                   rdfs:label "ями"@ru.
+<#103> lexinfo:case lexinfo:instrumentalCase;
+                                   lexinfo:gender lexinfo:masculine;
+                                   lexinfo:number lexinfo:plural;
+                                   lexinfo:partOfSpeech lexinfo:noun;
+                                   a owl:NamedIndividual,
+                                                lexinfo:Suffix;
+                                   rdfs:label "ями"@ru.
+<#104> lexinfo:case lexinfo:instrumentalCase;
+                                   lexinfo:gender lexinfo:feminine;
+                                   lexinfo:number lexinfo:plural;
+                                   lexinfo:partOfSpeech lexinfo:noun;
+                                   a owl:NamedIndividual,
+                                                lexinfo:Suffix;
+                                   rdfs:label "ями"@ru.
+<#105> lexinfo:case lexinfo:instrumentalCase;
+                                   lexinfo:gender lexinfo:feminine;
+                                   lexinfo:number lexinfo:plural;
+                                   lexinfo:partOfSpeech lexinfo:noun;
+                                   a owl:NamedIndividual,
+                                                lexinfo:Suffix;
+                                   rdfs:label "ями"@ru.
+<#106> lexinfo:case lexinfo:instrumentalCase;
+                                   lexinfo:gender lexinfo:neuter;
+                                   lexinfo:number lexinfo:plural;
+                                   lexinfo:partOfSpeech lexinfo:noun;
+                                   a owl:NamedIndividual,
+                                                lexinfo:Suffix;
+                                   rdfs:label "ями"@ru.
+<#107> lexinfo:case lexinfo:instrumentalCase;
+                                   lexinfo:gender "Pluralia tantum";
+                                   lexinfo:number lexinfo:plural;
+                                   lexinfo:partOfSpeech lexinfo:noun;
+                                   a owl:NamedIndividual,
+                                                lexinfo:Suffix;
+                                   rdfs:label "ями"@ru.
+<#108> lexinfo:case lexinfo:locativeCase;
+                                   lexinfo:gender lexinfo:masculine;
+                                   lexinfo:number lexinfo:plural;
+                                   lexinfo:partOfSpeech lexinfo:noun;
+                                   a owl:NamedIndividual,
+                                                lexinfo:Suffix;
+                                   rdfs:label "ах"@ru.
+<#109> lexinfo:case lexinfo:locativeCase;
+                                   lexinfo:gender lexinfo:masculine;
+                                   lexinfo:number lexinfo:plural;
+                                   lexinfo:partOfSpeech lexinfo:noun;
+                                   a owl:NamedIndividual,
+                                                lexinfo:Suffix;
+                                   rdfs:label "ах"@ru.
+<#11> lexinfo:case lexinfo:genitiveCase;
+                                  lexinfo:gender lexinfo:masculine;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "я"@ru.
+<#110> lexinfo:case lexinfo:locativeCase;
+                                   lexinfo:gender lexinfo:feminine;
+                                   lexinfo:number lexinfo:plural;
+                                   lexinfo:partOfSpeech lexinfo:noun;
+                                   a owl:NamedIndividual,
+                                                lexinfo:Suffix;
+                                   rdfs:label "ах"@ru.
+<#111> lexinfo:case lexinfo:locativeCase;
+                                   lexinfo:gender lexinfo:feminine;
+                                   lexinfo:number lexinfo:plural;
+                                   lexinfo:partOfSpeech lexinfo:noun;
+                                   a owl:NamedIndividual,
+                                                lexinfo:Suffix;
+                                   rdfs:label "ах"@ru.
+<#112> lexinfo:case lexinfo:locativeCase;
+                                   lexinfo:gender lexinfo:neuter;
+                                   lexinfo:number lexinfo:plural;
+                                   lexinfo:partOfSpeech lexinfo:noun;
+                                   a owl:NamedIndividual,
+                                                lexinfo:Suffix;
+                                   rdfs:label "ах"@ru.
+<#113> lexinfo:case lexinfo:locativeCase;
+                                   lexinfo:gender lexinfo:neuter;
+                                   lexinfo:number lexinfo:plural;
+                                   lexinfo:partOfSpeech lexinfo:noun;
+                                   a owl:NamedIndividual,
+                                                lexinfo:Suffix;
+                                   rdfs:label "ах"@ru.
+<#114> lexinfo:case lexinfo:locativeCase;
+                                   lexinfo:gender "Pluralia tantum";
+                                   lexinfo:number lexinfo:plural;
+                                   lexinfo:partOfSpeech lexinfo:noun;
+                                   a owl:NamedIndividual,
+                                                lexinfo:Suffix;
+                                   rdfs:label "ах"@ru.
+<#115> lexinfo:case lexinfo:locativeCase;
+                                   lexinfo:gender lexinfo:masculine;
+                                   lexinfo:number lexinfo:plural;
+                                   lexinfo:partOfSpeech lexinfo:noun;
+                                   a owl:NamedIndividual,
+                                                lexinfo:Suffix;
+                                   rdfs:label "ях"@ru.
+<#116> lexinfo:case lexinfo:locativeCase;
+                                   lexinfo:gender lexinfo:masculine;
+                                   lexinfo:number lexinfo:plural;
+                                   lexinfo:partOfSpeech lexinfo:noun;
+                                   a owl:NamedIndividual,
+                                                lexinfo:Suffix;
+                                   rdfs:label "ях"@ru.
+<#117> lexinfo:case lexinfo:locativeCase;
+                                   lexinfo:gender lexinfo:feminine;
+                                   lexinfo:number lexinfo:plural;
+                                   lexinfo:partOfSpeech lexinfo:noun;
+                                   a owl:NamedIndividual,
+                                                lexinfo:Suffix;
+                                   rdfs:label "ях"@ru.
+<#118> lexinfo:case lexinfo:locativeCase;
+                                   lexinfo:gender lexinfo:feminine;
+                                   lexinfo:number lexinfo:plural;
+                                   lexinfo:partOfSpeech lexinfo:noun;
+                                   a owl:NamedIndividual,
+                                                lexinfo:Suffix;
+                                   rdfs:label "ях"@ru.
+<#119> lexinfo:case lexinfo:locativeCase;
+                                   lexinfo:gender lexinfo:neuter;
+                                   lexinfo:number lexinfo:plural;
+                                   lexinfo:partOfSpeech lexinfo:noun;
+                                   a owl:NamedIndividual,
+                                                lexinfo:Suffix;
+                                   rdfs:label "ях"@ru.
+<#12> lexinfo:case lexinfo:accusativeCase;
+                                  lexinfo:gender lexinfo:masculine;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "я"@ru.
+<#120> lexinfo:case lexinfo:locativeCase;
+                                   lexinfo:gender "Pluralia tantum";
+                                   lexinfo:number lexinfo:plural;
+                                   lexinfo:partOfSpeech lexinfo:noun;
+                                   a owl:NamedIndividual,
+                                                lexinfo:Suffix;
+                                   rdfs:label "ях"@ru.
+<#121> lexinfo:case lexinfo:genitiveCase;
+                                   lexinfo:gender lexinfo:masculine;
+                                   lexinfo:number lexinfo:plural;
+                                   lexinfo:partOfSpeech lexinfo:noun;
+                                   a owl:NamedIndividual,
+                                                lexinfo:Suffix;
+                                   rdfs:label "ов"@ru.
+<#13> lexinfo:case lexinfo:nominativeCase;
+                                  lexinfo:gender lexinfo:feminine;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "я"@ru.
+<#14> lexinfo:case lexinfo:genitiveCase;
+                                  lexinfo:gender lexinfo:neuter;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "я"@ru.
+<#15> lexinfo:case lexinfo:nominativeCase;
+                                  lexinfo:gender lexinfo:neuter;
+                                  lexinfo:number lexinfo:plural;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "я"@ru.
+<#16> lexinfo:case lexinfo:accusativeCase;
+                                  lexinfo:gender lexinfo:neuter;
+                                  lexinfo:number lexinfo:plural;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "я"@ru.
+<#17> lexinfo:case lexinfo:genitiveCase;
+                                  lexinfo:gender lexinfo:masculine;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "и"@ru.
+<#18> lexinfo:case lexinfo:genitiveCase;
+                                  lexinfo:gender lexinfo:feminine;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "и"@ru.
+<#19> lexinfo:case lexinfo:genitiveCase;
+                                  lexinfo:gender lexinfo:feminine;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "и"@ru.
+<#2> lexinfo:case lexinfo:genitiveCase;
+                                 lexinfo:gender lexinfo:masculine;
+                                 lexinfo:number lexinfo:singular;
+                                 lexinfo:partOfSpeech lexinfo:noun;
+                                 a owl:NamedIndividual,
+                                              lexinfo:Suffix;
+                                 rdfs:label "а"@ru.
+<#20> lexinfo:case lexinfo:dativeCase;
+                                  lexinfo:gender lexinfo:feminine;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "и"@ru.
+<#21> lexinfo:case lexinfo:locativeCase;
+                                  lexinfo:gender lexinfo:feminine;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "и"@ru.
+<#22> lexinfo:case lexinfo:genitiveCase;
+                                  lexinfo:gender lexinfo:neuter;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "и"@ru.
+<#23> lexinfo:case lexinfo:dativeCase;
+                                  lexinfo:gender lexinfo:neuter;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "и"@ru.
+<#24> lexinfo:case lexinfo:locativeCase;
+                                  lexinfo:gender lexinfo:neuter;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "и"@ru.
+<#25> lexinfo:case lexinfo:nominativeCase;
+                                  lexinfo:gender lexinfo:masculine;
+                                  lexinfo:number lexinfo:plural;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "и"@ru.
+<#26> lexinfo:case lexinfo:nominativeCase;
+                                  lexinfo:gender lexinfo:masculine;
+                                  lexinfo:number lexinfo:plural;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "и"@ru.
+<#27> lexinfo:case lexinfo:nominativeCase;
+                                  lexinfo:gender lexinfo:feminine;
+                                  lexinfo:number lexinfo:plural;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "и"@ru.
+<#28> lexinfo:case lexinfo:accusativeCase;
+                                  lexinfo:gender lexinfo:feminine;
+                                  lexinfo:number lexinfo:plural;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "и"@ru.
+<#29> lexinfo:case lexinfo:nominativeCase;
+                                  lexinfo:gender lexinfo:feminine;
+                                  lexinfo:number lexinfo:plural;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "и"@ru.
+<#3> lexinfo:case lexinfo:accusativeCase;
+                                 lexinfo:gender lexinfo:masculine;
+                                 lexinfo:number lexinfo:singular;
+                                 lexinfo:partOfSpeech lexinfo:noun;
+                                 a owl:NamedIndividual,
+                                              lexinfo:Suffix;
+                                 rdfs:label "а"@ru.
+<#30> lexinfo:case lexinfo:accusativeCase;
+                                  lexinfo:gender lexinfo:feminine;
+                                  lexinfo:number lexinfo:plural;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "и"@ru.
+<#31> lexinfo:case lexinfo:nominativeCase;
+                                  lexinfo:gender "Pluralia tantum";
+                                  lexinfo:number lexinfo:plural;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "и"@ru.
+<#32> lexinfo:case lexinfo:accusativeCase;
+                                  lexinfo:gender "Pluralia tantum";
+                                  lexinfo:number lexinfo:plural;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "и"@ru.
+<#33> lexinfo:case lexinfo:genitiveCase;
+                                  lexinfo:gender lexinfo:masculine;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ы"@ru.
+<#34> lexinfo:case lexinfo:genitiveCase;
+                                  lexinfo:gender lexinfo:feminine;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ы"@ru.
+<#35> lexinfo:case lexinfo:nominativeCase;
+                                  lexinfo:gender lexinfo:masculine;
+                                  lexinfo:number lexinfo:plural;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ы"@ru.
+<#36> lexinfo:case lexinfo:nominativeCase;
+                                  lexinfo:gender lexinfo:masculine;
+                                  lexinfo:number lexinfo:plural;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ы"@ru.
+<#37> lexinfo:case lexinfo:accusativeCase;
+                                  lexinfo:gender lexinfo:masculine;
+                                  lexinfo:number lexinfo:plural;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ы"@ru.
+<#38> lexinfo:case lexinfo:nominativeCase;
+                                  lexinfo:gender lexinfo:feminine;
+                                  lexinfo:number lexinfo:plural;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ы"@ru.
+<#39> lexinfo:case lexinfo:nominativeCase;
+                                  lexinfo:gender "Pluralia tantum";
+                                  lexinfo:number lexinfo:plural;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ы"@ru.
+<#4> lexinfo:case lexinfo:nominativeCase;
+                                 lexinfo:gender lexinfo:feminine;
+                                 lexinfo:number lexinfo:singular;
+                                 lexinfo:partOfSpeech lexinfo:noun;
+                                 a owl:NamedIndividual,
+                                              lexinfo:Suffix;
+                                 rdfs:label "а"@ru.
+<#40> lexinfo:case lexinfo:accusativeCase;
+                                  lexinfo:gender "Pluralia tantum";
+                                  lexinfo:number lexinfo:plural;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ы"@ru.
+<#41> lexinfo:case lexinfo:dativeCase;
+                                  lexinfo:gender lexinfo:masculine;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "е"@ru.
+<#42> lexinfo:case lexinfo:locativeCase;
+                                  lexinfo:gender lexinfo:masculine;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "е"@ru.
+<#43> lexinfo:case lexinfo:locativeCase;
+                                  lexinfo:gender lexinfo:masculine;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "е"@ru.
+<#44> lexinfo:case lexinfo:dativeCase;
+                                  lexinfo:gender lexinfo:feminine;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "е"@ru.
+<#45> lexinfo:case lexinfo:locativeCase;
+                                  lexinfo:gender lexinfo:feminine;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "е"@ru.
+<#46> lexinfo:case lexinfo:nominativeCase;
+                                  lexinfo:gender lexinfo:neuter;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "е"@ru.
+<#47> lexinfo:case lexinfo:accusativeCase;
+                                  lexinfo:gender lexinfo:neuter;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "е"@ru.
+<#48> lexinfo:case lexinfo:locativeCase;
+                                  lexinfo:gender lexinfo:neuter;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "е"@ru.
+<#49> lexinfo:case lexinfo:accusativeCase;
+                                  lexinfo:gender lexinfo:masculine;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "у"@ru.
+<#5> lexinfo:case lexinfo:genitiveCase;
+                                 lexinfo:gender lexinfo:neuter;
+                                 lexinfo:number lexinfo:singular;
+                                 lexinfo:partOfSpeech lexinfo:noun;
+                                 a owl:NamedIndividual,
+                                              lexinfo:Suffix;
+                                 rdfs:label "а"@ru.
+<#50> lexinfo:case lexinfo:dativeCase;
+                                  lexinfo:gender lexinfo:masculine;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "у"@ru.
+<#51> lexinfo:case lexinfo:accusativeCase;
+                                  lexinfo:gender lexinfo:feminine;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "у"@ru.
+<#52> lexinfo:case lexinfo:dativeCase;
+                                  lexinfo:gender lexinfo:neuter;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "у"@ru.
+<#53> lexinfo:case lexinfo:accusativeCase;
+                                  lexinfo:gender lexinfo:masculine;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ю"@ru.
+<#54> lexinfo:case lexinfo:dativeCase;
+                                  lexinfo:gender lexinfo:masculine;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ю"@ru.
+<#55> lexinfo:case lexinfo:accusativeCase;
+                                  lexinfo:gender lexinfo:feminine;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ю"@ru.
+<#56> lexinfo:case lexinfo:instrumentalCase;
+                                  lexinfo:gender lexinfo:feminine;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ю"@ru.
+<#57> lexinfo:case lexinfo:dativeCase;
+                                  lexinfo:gender lexinfo:neuter;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ю"@ru.
+<#58> lexinfo:case lexinfo:instrumentalCase;
+                                  lexinfo:gender lexinfo:masculine;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ой"@ru.
+<#59> lexinfo:case lexinfo:instrumentalCase;
+                                  lexinfo:gender lexinfo:feminine;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ой"@ru.
+<#6> lexinfo:case lexinfo:nominativeCase;
+                                 lexinfo:gender lexinfo:neuter;
+                                 lexinfo:number lexinfo:plural;
+                                 lexinfo:partOfSpeech lexinfo:noun;
+                                 a owl:NamedIndividual,
+                                              lexinfo:Suffix;
+                                 rdfs:label "а"@ru.
+<#60> lexinfo:case lexinfo:instrumentalCase;
+                                  lexinfo:gender lexinfo:masculine;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ою"@ru.
+<#61> lexinfo:case lexinfo:instrumentalCase;
+                                  lexinfo:gender lexinfo:feminine;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ою"@ru.
+<#62> lexinfo:case lexinfo:instrumentalCase;
+                                  lexinfo:gender lexinfo:masculine;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ей"@ru.
+<#63> lexinfo:case lexinfo:instrumentalCase;
+                                  lexinfo:gender lexinfo:feminine;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ей"@ru.
+<#64> lexinfo:case lexinfo:genitiveCase;
+                                  lexinfo:gender lexinfo:masculine;
+                                  lexinfo:number lexinfo:plural;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ей"@ru.
+<#65> lexinfo:case lexinfo:accusativeCase;
+                                  lexinfo:gender lexinfo:masculine;
+                                  lexinfo:number lexinfo:plural;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ей"@ru.
+<#66> lexinfo:case lexinfo:genitiveCase;
+                                  lexinfo:gender lexinfo:masculine;
+                                  lexinfo:number lexinfo:plural;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ей"@ru.
+<#67> lexinfo:case lexinfo:accusativeCase;
+                                  lexinfo:gender lexinfo:masculine;
+                                  lexinfo:number lexinfo:plural;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ей"@ru.
+<#68> lexinfo:case lexinfo:genitiveCase;
+                                  lexinfo:gender lexinfo:feminine;
+                                  lexinfo:number lexinfo:plural;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ей"@ru.
+<#69> lexinfo:case lexinfo:accusativeCase;
+                                  lexinfo:gender lexinfo:feminine;
+                                  lexinfo:number lexinfo:plural;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ей"@ru.
+<#7> lexinfo:case lexinfo:accusativeCase;
+                                 lexinfo:gender lexinfo:neuter;
+                                 lexinfo:number lexinfo:plural;
+                                 lexinfo:partOfSpeech lexinfo:noun;
+                                 a owl:NamedIndividual,
+                                              lexinfo:Suffix;
+                                 rdfs:label "а"@ru.
+<#70> lexinfo:case lexinfo:genitiveCase;
+                                  lexinfo:gender lexinfo:neuter;
+                                  lexinfo:number lexinfo:plural;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ей"@ru.
+<#71> lexinfo:case lexinfo:instrumentalCase;
+                                  lexinfo:gender lexinfo:masculine;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ею"@ru.
+<#72> lexinfo:case lexinfo:instrumentalCase;
+                                  lexinfo:gender lexinfo:feminine;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ею"@ru.
+<#73> lexinfo:case lexinfo:instrumentalCase;
+                                  lexinfo:gender lexinfo:masculine;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ом"@ru.
+<#74> lexinfo:case lexinfo:instrumentalCase;
+                                  lexinfo:gender lexinfo:neuter;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ом"@ru.
+<#75> lexinfo:case lexinfo:instrumentalCase;
+                                  lexinfo:gender lexinfo:masculine;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ем"@ru.
+<#76> lexinfo:case lexinfo:instrumentalCase;
+                                  lexinfo:gender lexinfo:neuter;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ем"@ru.
+<#77> lexinfo:case lexinfo:instrumentalCase;
+                                  lexinfo:gender lexinfo:neuter;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ем"@ru.
+<#78> lexinfo:case lexinfo:instrumentalCase;
+                                  lexinfo:gender lexinfo:masculine;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ём"@ru.
+<#79> lexinfo:case lexinfo:instrumentalCase;
+                                  lexinfo:gender lexinfo:neuter;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ём"@ru.
+<#8> lexinfo:case lexinfo:nominativeCase;
+                                 lexinfo:gender "Pluralia tantum";
+                                 lexinfo:number lexinfo:plural;
+                                 lexinfo:partOfSpeech lexinfo:noun;
+                                 a owl:NamedIndividual,
+                                              lexinfo:Suffix;
+                                 rdfs:label "а"@ru.
+<#80> lexinfo:case lexinfo:nominativeCase;
+                                  lexinfo:gender lexinfo:neuter;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "о"@ru.
+<#81> lexinfo:case lexinfo:accusativeCase;
+                                  lexinfo:gender lexinfo:neuter;
+                                  lexinfo:number lexinfo:singular;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "о"@ru.
+<#82> lexinfo:case lexinfo:dativeCase;
+                                  lexinfo:gender lexinfo:masculine;
+                                  lexinfo:number lexinfo:plural;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ам"@ru.
+<#83> lexinfo:case lexinfo:dativeCase;
+                                  lexinfo:gender lexinfo:masculine;
+                                  lexinfo:number lexinfo:plural;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ам"@ru.
+<#84> lexinfo:case lexinfo:dativeCase;
+                                  lexinfo:gender lexinfo:feminine;
+                                  lexinfo:number lexinfo:plural;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ам"@ru.
+<#85> lexinfo:case lexinfo:dativeCase;
+                                  lexinfo:gender lexinfo:feminine;
+                                  lexinfo:number lexinfo:plural;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ам"@ru.
+<#86> lexinfo:case lexinfo:dativeCase;
+                                  lexinfo:gender lexinfo:neuter;
+                                  lexinfo:number lexinfo:plural;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ам"@ru.
+<#87> lexinfo:case lexinfo:dativeCase;
+                                  lexinfo:gender lexinfo:neuter;
+                                  lexinfo:number lexinfo:plural;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ам"@ru.
+<#88> lexinfo:case lexinfo:dativeCase;
+                                  lexinfo:gender "Pluralia tantum";
+                                  lexinfo:number lexinfo:plural;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ам"@ru.
+<#89> lexinfo:case lexinfo:dativeCase;
+                                  lexinfo:gender lexinfo:masculine;
+                                  lexinfo:number lexinfo:plural;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ям"@ru.
+<#9> lexinfo:case lexinfo:accusativeCase;
+                                 lexinfo:gender "Pluralia tantum";
+                                 lexinfo:number lexinfo:plural;
+                                 lexinfo:partOfSpeech lexinfo:noun;
+                                 a owl:NamedIndividual,
+                                              lexinfo:Suffix;
+                                 rdfs:label "а"@ru.
+<#90> lexinfo:case lexinfo:dativeCase;
+                                  lexinfo:gender lexinfo:masculine;
+                                  lexinfo:number lexinfo:plural;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ям"@ru.
+<#91> lexinfo:case lexinfo:dativeCase;
+                                  lexinfo:gender lexinfo:feminine;
+                                  lexinfo:number lexinfo:plural;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ям"@ru.
+<#92> lexinfo:case lexinfo:dativeCase;
+                                  lexinfo:gender lexinfo:feminine;
+                                  lexinfo:number lexinfo:plural;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ям"@ru.
+<#93> lexinfo:case lexinfo:dativeCase;
+                                  lexinfo:gender lexinfo:neuter;
+                                  lexinfo:number lexinfo:plural;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ям"@ru.
+<#94> lexinfo:case lexinfo:dativeCase;
+                                  lexinfo:gender "Pluralia tantum";
+                                  lexinfo:number lexinfo:plural;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ям"@ru.
+<#95> lexinfo:case lexinfo:instrumentalCase;
+                                  lexinfo:gender lexinfo:masculine;
+                                  lexinfo:number lexinfo:plural;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ами"@ru.
+<#96> lexinfo:case lexinfo:instrumentalCase;
+                                  lexinfo:gender lexinfo:masculine;
+                                  lexinfo:number lexinfo:plural;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ами"@ru.
+<#97> lexinfo:case lexinfo:instrumentalCase;
+                                  lexinfo:gender lexinfo:feminine;
+                                  lexinfo:number lexinfo:plural;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ами"@ru.
+<#98> lexinfo:case lexinfo:instrumentalCase;
+                                  lexinfo:gender lexinfo:feminine;
+                                  lexinfo:number lexinfo:plural;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ами"@ru.
+<#99> lexinfo:case lexinfo:instrumentalCase;
+                                  lexinfo:gender lexinfo:neuter;
+                                  lexinfo:number lexinfo:plural;
+                                  lexinfo:partOfSpeech lexinfo:noun;
+                                  a owl:NamedIndividual,
+                                               lexinfo:Suffix;
+                                  rdfs:label "ами"@ru.
