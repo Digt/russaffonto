@@ -9,14 +9,14 @@
 
 # Author: Constantin Kondratyev
 # Created: 2016-12-01 19:18
-# Description: Russian Affixes Ontology
+# Description: Russian Affix Ontology
 
 <http://kloud.one/russaffonto> a owl:Ontology ;
                                 owl:versionIRI <http://kloud.one/russaffonto/1.0.0> ;
                                 dc:date "01-12-2016" ;
                                 rdfs:label "RusAffOnto"@en ;
                                 rdfs:title "Онтология Аффиксов Русского Языка"@ru ,
-                                            "Russian Affixes Ontology"@en .
+                                            "Russian Affix Ontology"@en .
                                             
 
 # Individuals
