@@ -9,7 +9,7 @@
 
 # Author: Constantin Kondratyev
 # Created: 2016-12-01 19:18
-# Description: Russian Affix Ontology
+# Description: Russian Affixes Ontology
 
 <http://kloud.one/russaffonto> a owl:Ontology ;
                                 owl:versionIRI <http://kloud.one/russaffonto/1.0.0> ;
